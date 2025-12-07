@@ -28,3 +28,16 @@ console.log(list1,"\n",list2);
 //tuple :-> use when fixed number of values with different types
 let person1 : [string,number] = ["manish", 24];
 console.log(person1);
+
+//enum -> give friendly names to a set of numeric values
+enum Color {Red = 5, Green, Blue};
+let c : Color = Color.Green;
+console.log(c)
+
+// any type 
+let randomValue : any = 10;
+randomValue= true;
+console.log(randomValue);
+randomValue="Manish";
+console.log(randomValue);
+
