@@ -24,3 +24,7 @@ console.log(isNew, myName, n, u);
 let list1 : number[] = [1,2,3];      //syntax 1
 let list2 : Array<number> = [4,5,6]; //syntax 2
 console.log(list1,"\n",list2);
+
+//tuple :-> use when fixed number of values with different types
+let person1 : [string,number] = ["manish", 24];
+console.log(person1);
