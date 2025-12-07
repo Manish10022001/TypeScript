@@ -19,3 +19,8 @@ let u : undefined = undefined;
 let isNew : boolean = null;
 let myName: string = undefined;
 console.log(isNew, myName, n, u);
+
+//Array of values
+let list1 : number[] = [1,2,3];      //syntax 1
+let list2 : Array<number> = [4,5,6]; //syntax 2
+console.log(list1,"\n",list2);
