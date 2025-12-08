@@ -51,3 +51,18 @@ if(hasName(myVariable)){
     console.log(myVariable.name);
 }
 (myVariable as string).toUpperCase();
+
+
+//Type Inference
+let a;
+a=10;
+a=true;
+
+let b =10;
+// b=false; this gives error dues to type inference, but type inference only work when initialized. that's why above for variabble a there is no error
+
+//Union of Type
+let multiType: number | boolean;
+multiType=10;
+multiType=true;
+//multiType="Manish"; //this gives error as there is union of number and boolean, no other types
