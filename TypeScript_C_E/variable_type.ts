@@ -41,3 +41,13 @@ console.log(randomValue);
 randomValue="Manish";
 console.log(randomValue);
 
+//unknown type
+let myVariable : unknown = "manish"
+
+function hasName(obj: any) : obj is {name:string}{
+    return !!obj && typeof obj === "object" && "name" in obj
+}
+if(hasName(myVariable)){
+    console.log(myVariable.name);
+}
+(myVariable as string).toUpperCase();
