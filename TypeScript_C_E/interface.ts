@@ -9,17 +9,29 @@
 // console.log(fullName(p))
 
 //interface
+// interface person {
+//     firstName:string,
+//     lastName:string,
+// }
+// function fullName(person:person){
+//     console.log(`${person.firstName} ${person.lastName}`)
+// }
+// let p = {
+//     firstName:"Bruce",
+//     lastName:"Wayne"
+// }
+// fullName(p);
+
+//optional properties in interface
 interface person {
     firstName:string,
-    lastName:string,
+    lastName?:string,
 }
-
 function fullName(person:person){
     console.log(`${person.firstName} ${person.lastName}`)
 }
 let p = {
     firstName:"Bruce",
-    lastName:"Wayne"
+    // lastName:"Wayne"
 }
-
 fullName(p);
