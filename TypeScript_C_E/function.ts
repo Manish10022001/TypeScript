@@ -15,3 +15,13 @@ function sub(num1:number, num2?:number){
 }
 console.log(sub(4,2));
 console.log(sub(3));
+
+//default parameter
+function multiply(num1:number, num2:number=20): number{
+    if(num2)
+        return num1*num2;
+    else
+        return num1
+}
+console.log(multiply(3,2));
+console.log(multiply(2));
