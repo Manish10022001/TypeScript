@@ -1,9 +1,25 @@
-//object
-function fullName(person:{firstName:string, lastName:string}){
-    return (`${person.firstName} ${person.lastName}`)
+// //object
+// function fullName(person:{firstName:string, lastName:string}){
+//     return (`${person.firstName} ${person.lastName}`)
+// }
+// let p = {
+//     firstName:"bruce",
+//     lastName:"Wayne"
+// }
+// console.log(fullName(p))
+
+//interface
+interface person {
+    firstName:string,
+    lastName:string,
+}
+
+function fullName(person:person){
+    console.log(`${person.firstName} ${person.lastName}`)
 }
 let p = {
-    firstName:"bruce",
+    firstName:"Bruce",
     lastName:"Wayne"
 }
-console.log(fullName(p))
+
+fullName(p);
